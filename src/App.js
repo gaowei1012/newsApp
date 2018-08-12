@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Recommend from './pages/recommend'
-
+import NavTop from './components/navTop'
 import './App.less';
 
 
@@ -8,8 +7,16 @@ import './App.less';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Recommend />
+      <div>
+        {/* navTop */}
+        <div>
+          <NavTop />
+        </div>
+        <div>
+          {/* 路由 */}
+          {/* {this.props.children} */}
+          content
+        </div>
       </div>
     );
   }
