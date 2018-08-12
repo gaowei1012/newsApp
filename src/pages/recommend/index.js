@@ -23,22 +23,21 @@ export default class Recommend extends React.Component {
                 params: {} 
             },
         }).then((res) => {
-            let list = res.data.map((item, index) => {
-                item.key = index;
-                return item;
-            })
-            this.setState({
-                list: list
-            })
+           let list = res.data.forEach((item, index) => {
+               item.key = index;
+               debugger
+               return item;
+           });
+           this.setState({
+               list
+           })
         }) 
     }
 
     render() {
         return (
             <div>
-                <Card title={this.list.title}>
-                    
-                </Card>
+               
             </div>
         );
     }

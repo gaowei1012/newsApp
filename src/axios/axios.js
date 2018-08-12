@@ -15,8 +15,7 @@ export default class Axios {
                 params: (options.data && options.data.params) || ''
             }).then((response) => {
                 if (response.status == '200') {
-                    let res = response.data;
-                    resolve(res);
+                    resolve(response.data);
                 } else {
                     reject(response.data);
                 }
