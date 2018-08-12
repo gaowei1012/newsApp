@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavBar, Icon } from 'antd-mobile'
+import NavTabs from './../navTab'
 import './index.less'
 
 export default class NavTop extends React.Component {
@@ -18,6 +19,7 @@ export default class NavTop extends React.Component {
                 >
                     <img src="/assets/logo.png" alt='logo'/>
                 </NavBar>
+                <NavTabs />
             </div>
         );
     }
