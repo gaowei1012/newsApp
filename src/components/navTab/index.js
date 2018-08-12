@@ -23,7 +23,7 @@ export default class NavTabs extends React.Component {
 
     renderContent = tab => (
         <div>
-            <p>{tab.title}</p>
+            <p>{this.props.children}</p>
         </div>
     )
 

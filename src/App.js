@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavTop from './components/navTop'
 import './App.less';
+import Recommend from './pages/recommend';
 
 
 
@@ -15,7 +16,7 @@ class App extends Component {
         <div>
           {/* 路由 */}
           {/* {this.props.children} */}
-          content
+          <Recommend />
         </div>
       </div>
     );

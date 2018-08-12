@@ -29,6 +29,7 @@
     "file-loader": "1.1.5",
     "fs-extra": "3.0.1",
     "html-webpack-plugin": "2.29.0",
+    "http-proxy-middleware": "^0.18.0",
     "jest": "20.0.4",
     "jsonp": "^0.2.1",
     "less": "^3.8.1",
@@ -97,10 +98,22 @@
       "react-app"
     ],
     "plugins": [
-      ["import", { "libraryName": "antd-mobile", "style": "css" }]
+      [
+        "import",
+        {
+          "libraryName": "antd-mobile",
+          "style": "css"
+        }
+      ]
     ]
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "proxy": {
+    "/*": {
+      "target": "https://m.toutiao.com",
+      "changeOrigin": true
+    }
   }
 }
