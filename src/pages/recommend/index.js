@@ -25,7 +25,6 @@ export default class Recommend extends React.Component {
         }).then((res) => {
            let list = res.data.forEach((item, index) => {
                item.key = index;
-               debugger
                return item;
            });
            this.setState({
