@@ -13,7 +13,7 @@ export default class FotTabBar extends React.Component {
 
     render() {
         return (
-            <div>
+            <div style={{width: '100%'}}>
                 <TabBar
                     unselectedTintColor="#949494"
                     tintColor="#33A3F4"
